@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente general */
+body {
+  font-family: 'Irish Grover', cursive;
+  background-color: #fff;
+  color: #000;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-evenly; /* Distribuye espacio igual entre los items */
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Título ARAPERFUL */
+h1.titulo {
+  font-size: 66px; /* tamaño aumentado */
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #924545 0%, #2C1515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0; /* elimina margenes */
+  flex-shrink: 0; /* que no se achique */
+}
+
+/* Contenedor del botón Menú y el menú desplegable */
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espacio entre botón y menú */
+  flex-shrink: 0; /* que no se achique */
+}
+
+/* Botón Menú */
+.menu-btn {
+  width: 276px;
+  height: 62px;
+  background: linear-gradient(180deg, #C23693 0%, #5C1946 100%);
+  color: #fff;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Irish Grover', cursive;
+}
+
+/* Menú desplegable */
+.dropdown {
+  width: 270px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #C23693 0%, #5C1946 100%);
+  padding: 10px;
+  margin-left: 0; /* sin margen para pegar al botón */
+}
+
+.dropdown a {
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+/* MAIN - IMÁGENES */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.img-left {
+  width: 508px;
+  height: 543px;
+  object-fit: cover;
+}
+
+.img-right-container {
+  position: relative;
+}
+
+.img-right {
+  width: 750px;
+  height: 410px;
+  object-fit: cover;
+}
+
+.img-caption {
+  position: absolute;
+  bottom: 0;
+  width: 750px;
+  height: 122px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-caption p {
+  font-family: 'Italianno', cursive;
+  font-size: 64px;
+  color: #fff;
+}
+
+form {
+  margin-top: 50px; /* ajusta la distancia desde las imágenes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 150px; /* ajusta el ancho de los campos */
+  height: 25px; /* ajusta la altura de los campos */
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 300px; /* ajusta el ancho del campo de texto largo */
+  height: 50px; /* ajusta la altura del campo de texto largo */
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+
+/* CSS para portafolio - tamaño imágenes */
+.portafolio-main img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+}
+
+.portafolio-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.portafolio-item {
+  width: 300px;        /* mismo ancho que la imagen */
+  text-align: left;    /* alineación texto a la izquierda */
+}
+
+.portafolio-item img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 10px; /* separación entre imagen y texto */
+}
+
+.portafolio-item p {
+  margin: 0;           /* sin margen extra */
+  line-height: 1.4;
+  max-height: 4.2em;   /* 3 líneas aproximadamente (3 x 1.4em) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+/* FOOTER - 3 BOTONES */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  display: inline-block;
+  width: 357px;
+  height: 143px;
+  background: linear-gradient(180deg, #C23693 0%, #5C1946 100%);
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Irish Grover', cursive;
+  text-align: center;
+  line-height: 143px;
+  text-decoration: none;
+  border-radius: 10px;
+}
